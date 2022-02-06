@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="stadium.css">
+    <link rel="stylesheet" href="player-positions.css">
+</head>
+<body>
+    <main>
+        <div class="stadium">
+            <div class="stadium__lines">
+              <div class="lines__square1"></div>
+              <div class="lines__square2"></div>
+              <div class="lines__circle"></div>
+            </div>
+            <div class="stadium__teams">
+                <div class="stadium__member--container left red">
+                    <div class="stadium__member keeper" onclick="showOptions(event)">
+                        <div class="member__options">
+                            <div class="member__option">Yellow Card</div>
+                            <div class="member__option">Red Card</div>
+                            <div class="member__option">Pass</div>
+                            <div class="member__option">Goal</div>
+                        </div>
+                    </div>
+                    <div class="defenders">
+                        <div class="stadium__member defender-back-left" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div  class="stadium__member defender-right" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div  class="stadium__member defender-left" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div  class="stadium__member defender-back-right" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="midfielders">
+                        <div class="stadium__member midfielder-right" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                            <div class="stadium__member midfielder-defender" onclick="showOptions(event)">
+                                <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div class="stadium__member midfielder-left" onclick="showOptions(event)"><div class="member__options">
+                            <div class="member__option">Yellow Card</div>
+                            <div class="member__option">Red Card</div>
+                            <div class="member__option">Pass</div>
+                            <div class="member__option">Goal</div>
+                        </div></div>
+                    </div>
+                    <div class="attackers">
+                        <div class="stadium__member left-wing" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div class="stadium__member attacker" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div class="stadium__member right-wing" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stadium__member--container right blue">
+                    <div class="stadium__member keeper" onclick="showOptions(event)">
+                        <div class="member__options">
+                            <div class="member__option">Yellow Card</div>
+                            <div class="member__option">Red Card</div>
+                            <div class="member__option">Pass</div>
+                            <div class="member__option">Goal</div>
+                        </div>
+                    </div>
+                    <div class="defenders">
+                        <div class="stadium__member defender-back-left" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div class="stadium__member defender-right" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div class="stadium__member defender-left" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div class="stadium__member defender-back-right" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="midfielders">
+                        <div class="stadium__member midfielder-right" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div class="stadium__member midfielder-defender" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div class="stadium__member midfielder-left" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attackers">
+                        <div class="stadium__member left-wing" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div class="stadium__member attacker" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                        <div class="stadium__member right-wing" onclick="showOptions(event)">
+                            <div class="member__options">
+                                <div class="member__option">Yellow Card</div>
+                                <div class="member__option">Red Card</div>
+                                <div class="member__option">Pass</div>
+                                <div class="member__option">Goal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="score-board">
+              <div id="redTeam" class="team">
+                  <h1>Red Team</h1>
+                  <ul class="results">
+                      <li class="results__goals">Goals: 0</li>
+                      <li class="results__yellow-cards">Yellow Cards: 0</li>
+                      <li class="results__red-cards">Red Cards: 0</li>
+                      <li class="results__passes">Passes: 0</li>
+                  </ul>
+              </div>
+              <div id="blueTeam" class="team">
+                  <h1>Blue Team</h1>
+                  <ul>
+                      <li class="results__goals">Goals: 0</li>
+                      <li class="results__yellow-cards">Yellow Cards: 0</li>
+                      <li class="results__red-cards">Red Cards: 0</li>
+                      <li class="results__passes">Passes: 0</li>
+                  </ul>
+              </div>
+          </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

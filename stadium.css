@@ -1,0 +1,77 @@
+.stadium {
+  background: rgb(46, 139, 46);
+  height: 80vh;
+  margin: 4rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.stadium__lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.stadium__lines::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: white;
+  width: 0.4rem;
+  height: 100%;
+}
+
+.lines__circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -50%);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 3px solid white;
+  z-index: 1;
+}
+
+.lines__circle::after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -50%);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.lines__square1,
+.lines__square2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4%;
+  height: 30%;
+  border: 3px solid white;
+}
+
+.lines__square1 {
+  left: 0;
+  border-left: none;
+}
+
+.lines__square2 {
+  right: 0;
+  border-right: none;
+}
+
+.stadium__teams {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}

@@ -1,0 +1,81 @@
+.keeper {
+  position: absolute !important;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.defenders,
+.midfielders,
+.attackers {
+  height: 100%;
+  width: 8rem;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.right > * {
+  align-items: flex-end;
+}
+
+.left .keeper {
+  left: 0;
+}
+
+.right .keeper {
+  right: 0;
+}
+
+.left .defenders {
+  left: 15%;
+}
+
+.right .defenders {
+  right: 15%;
+}
+
+.left .midfielders {
+  left: 45%;
+}
+
+.right .midfielders {
+  right: 45%;
+}
+
+.left .attackers {
+  right: 5%;
+}
+
+.right .attackers {
+  left: 5%;
+}
+
+.defender-back-right,
+.defender-back-left {
+  align-self: flex-end;
+}
+
+.right .defender-back-right,
+.right .defender-back-left {
+  align-self: flex-start;
+}
+
+.midfielder-right,
+.midfielder-left {
+  align-self: flex-end;
+}
+
+.right .midfielder-right,
+.right .midfielder-left {
+  align-self: flex-start;
+}
+
+.attacker {
+  align-self: flex-end;
+}
+
+.right .attacker {
+  align-self: flex-start;
+}
